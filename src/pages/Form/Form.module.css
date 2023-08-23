@@ -1,0 +1,166 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: hsl(234, 29%, 20%);
+}
+.cardContainer{
+    display: flex;
+    gap: 3em;
+    padding: 1em;
+    border-radius: 1.5em;
+    width: 90vh;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    background-color: white;
+}
+
+.infoContainer{
+    padding-top: 1em;
+    padding-left: 2em;
+}
+.container h1{
+    font-size: 3.4em;
+    margin-bottom: 0;
+}
+.container p{
+    font-size: 16px;
+}
+.container button{
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 0.5em;
+    padding: 1em;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+.container button:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, #FF586A, #FF663D);
+    box-shadow: #FF663D 0px 10px 40px -7px;
+}
+
+
+.list{
+    margin-top: 1.5em;
+}
+.list p{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+    margin-bottom: 13px;
+}
+
+.email{
+    margin-top: 3em;
+    margin-bottom: 1em;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.email label{
+    font-weight: 700;
+    width: 49%;
+}
+.email input{
+    outline: none;
+    width: 100%;
+    border-radius: 0.5em;
+    border: 1px solid hsl(231, 7%, 60%);
+    padding: 1em;
+    color: hsl(234, 29%, 20%);
+}
+.email input:hover{
+    border-color: hsl(234, 29%, 20%);
+}
+
+.messageContainer{
+    padding: 3em;
+    padding-top: 2.4em;
+    width: 40vh;
+    gap: 3em;
+    border-radius: 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    background-color: white;
+}
+.messageContainer h1{
+    margin-top: 0.4em;
+    line-height: 1;
+}
+.messageContainer p{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.messageContainer label{
+    font-weight: 700;
+}
+.attribution{
+    margin-top: 1em;
+    color: white;
+}
+.attribution label{
+    margin: 0.2em;
+}
+.attribution a{
+    color: #FF663D;
+    text-decoration: none;
+}
+.errorLabel{
+    text-align: end;
+    font-size: small;
+    color: #FF663D;
+}
+.errorInput{
+    border: 1px solid #FF663D !important;
+    background-color: #ff673d2d;
+    color: #FF663D !important;
+}
+
+
+
+@media (max-width: 1325px){
+    .cardContainer{
+        height: 70%;
+        width: 100vh;
+    }
+    .container h1{
+        font-size: 2.5em !important;
+    }
+    .email{
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 1030px) {
+    .cardContainer {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 90%;
+    }
+    .infoContainer{
+        padding: 1em;
+        padding-bottom: 2em;
+    }
+    .messageContainer{
+        height: 83%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+    .messageContainer img{
+        left: 1;
+        height: 3em;
+    }
+    .messageContainer button{
+        margin-top: 20em;
+    }
+}
